@@ -10,10 +10,12 @@ const koaBody = require('koa-body')
 const index = require('./routes/index')
 const users = require('./routes/users')
 const route = require('./routes/routers')
+const cors = require('koa2-cors')
 
 // error handler
 onerror(app)
-
+//跨域
+app.use(cors());
 // middlewares
 /*app.use(bodyparser({
   enableTypes:['json', 'form', 'text']

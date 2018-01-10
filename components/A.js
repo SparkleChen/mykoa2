@@ -31,9 +31,9 @@ class A extends React.Component {
     render() {
         return (
             <div>
-                <p>my name is {this.state.name}</p>
-                <p>my age is {this.state.age}</p>
-                <p>my email is {this.state.email}</p>
+                <p>My name is {this.state.name}</p>
+                <p>My age is {this.state.age}</p>
+                <p>My email is {this.state.email}</p>
             </div>
         );
     }
